@@ -1,0 +1,15 @@
+@import '../../styles/variables.css';
+
+.navigation {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 43px;
+    position: fixed;
+    margin-top: 250px;
+}
+.item {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: var(--color-gray);
+}
