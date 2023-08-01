@@ -1,7 +1,13 @@
+
 @import "../../styles/variables.css";
 
-.work {
-  background: var(--white);
-  width: 100%;
-  min-height: 600px;
+.mainInfo {
+    background: var(--white);
+    width: 100%;
+    min-height: 300px;
 }
+
+.headerInfo {
+    width: 438px;
+    margin: 0 auto 50px;
+    text-align: center;}
