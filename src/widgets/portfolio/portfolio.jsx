@@ -6,6 +6,8 @@ import { PortfolioCard } from "../../shared/portfolioCard/portfolioCard";
 
 import "./portfolio.css";
 
+
+
 export const Portfolio = () => {
   const [portfolioData, setPortfolioData] = useState(PORTOFOLIO_DATA);
 
