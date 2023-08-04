@@ -1,6 +1,5 @@
 @import '../../styles/variables.css';
 
-
 .navigation {
     display: grid;
     grid-auto-flow: row;
