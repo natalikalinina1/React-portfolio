@@ -10,7 +10,9 @@ import "./navigation.css";
 export const Navigation = () => {
   return (
     <nav className="navigation">
-      <Link className="item" activeClass="active" to="home"smooth={true} duration={500}> 
+      <Link  className="item"
+        activeClass="active" to="home" smooth={true} duration={500}
+      >
         <img src={HomeIcon} alt="HomeIcon" />
       </Link>
       <Link className="item" to="education" smooth={true} duration={500}>
