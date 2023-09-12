@@ -6,14 +6,16 @@ import { Portfolio } from "../../widgets/portfolio/portfolio";
 import { Contacts } from "../../widgets/contacts/contacts";
 import { Footer } from "../../widgets/footer/footer";
 import { RightPanel } from "../../widgets/rightPanel/rightPanel";
-import { WORK, EDUCATION } from "../../constants/workHistory";
-import { getEducation, getWorkn } from "../../processes/getPortfolioData";
+import { WORK } from "../../constans/workHistory";
+import { getEducation} from "../../processes/getPortfolioData";
+import { useTheme } from "../../processes/contextTheme";
 
 import "./homePage.css";
 
 export const HomePage = () => {
   const [education, setEducation] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const getData = async () => {
@@ -30,7 +32,7 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className={`container container_${theme}`}>
       <Information />
       <div className="inner">
         <Header />

@@ -1,4 +1,4 @@
-import { EDUCATION, WORK } from "../constants/workHistory";
+import { EDUCATION, WORK } from "../constans/workHistory";
 
 export const getEducation = async () => {
   return new Promise((resolve) => {
